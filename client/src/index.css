@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Primary/default button */
+.btn-primary {
+  @apply inline-block px-5 py-3 rounded-lg bg-indigo-500 uppercase tracking-wider font-semibold text-sm text-white shadow-lg sm:text-base;
+}
+
+/* Primary/hover button */
+.btn-primary:hover {
+  @apply bg-[#7E6FFF];
+}
+
+/* Ghost/default button */
+.btn-ghost {
+  @apply border border-[#E8E7EA] text-[#3F4142] font-semibold text-[16px] bg-transparent rounded-[14px] py-[12px] px-[14px];
+}
+
+/* Ghost/hover button */
+.btn-ghost:hover {
+  @apply text-[#5f4cff];
+}
+
+/* White/default button */
+.btn-white {
+  @apply bg-white border text-[#3F4142] font-semibold text-[16px] rounded-[14px] py-[12px] px-[14px];
+}
+
+/* White/hover button */
+.btn-white:hover {
+  @apply text-[#5f4cff];
+}
+
+/* Card container */
+.card-container {
+  @apply bg-white rounded overflow-hidden shadow-md p-4 max-h-80 w-72 relative;
+}
+
+/* Custom input */
+.input-custom {
+  @apply w-[291px] border rounded-[14px] p-[12px];
+}
+
+/* Text input */
+.input-text {
+  @apply h-[24px] text-base; 
+}
+
+/* Custom input focus */
+.input-custom:focus .input-text {
+  @apply text-[#9D9D9F]; /* dark/50-solid */
+}
+
+/* Custom input focus border */
+.input-custom:focus {
+  @apply outline-none border-[#ffffff]; 
+}
+
+/* Valid input */
+.input-custom input[type="email"]:valid,
+.input-custom input[type="password"]:valid {
+  @apply text-[#3F4142]; /* dark/100 */
+}
